@@ -1,0 +1,36 @@
+# 本机密钥库与产物，绝不入库
+keys.json
+*.db
+mggkey_multi_process
+
+# 解密出来的音频
+*.flac
+*.mp3
+*.ogg
+*.m4a
+*.aac
+*.wav
+*.dff
+
+# 加密原件（体积大且属于个人媒体文件）
+*.kgg
+*.kgm
+*.kgma
+*.kge
+*.vpr
+
+# 例外：测试用的公开样本必须入库
+!tests/vectors/*.kgm
+!tests/vectors/*.kgg
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# 编辑器 / 系统
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
